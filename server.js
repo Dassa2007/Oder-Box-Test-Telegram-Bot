@@ -10,7 +10,7 @@ app.use(express.json());
 
 const upload = multer({ storage: multer.memoryStorage() });
 
-const TELEGRAM_BOT_TOKEN = '8984933024:AAG_b9I-oCIVZNyeV-UiH5McnvMkzaNao1Y';
+const TELEGRAM_BOT_TOKEN = '8984933024:AAG_b9I-oCIvZNyeV-UiH5McnvMkzaNaolY';
 const TELEGRAM_CHAT_ID = '8303305317';
 
 app.post('/api/order', upload.single('receipt'), async (req, res) => {
